@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+CSSGridTest.zul
+
+	Purpose:
+
+	Description:
+
+	History:
+		Mon Jul  3 14:22:51 CST 2017, Created by wenninghsu
+
+Copycontainer2 (C) 2017 Potix Corporation. All container2s Reserved.
+
+-->
+
+<?style src="css/ZKCSSGridDemo1.css"?>
+<zk xmlns:n="http://www.zkoss.org/2005/zk/native">
+    <div sclass="container">
+        <div sclass="instruction item">
+            <label value="Instruction"/>
+            <separator/>
+            <label>As of 2017, most browsers support CSS Grid Layout simultaneously. The very first two-dimensional grid-based CSS module created specifically to solve the layout problems. In this article, we will introduce how ZK works with CSS Grid Layout seamlessly to arrange the position of ZK components lively.</label>
+        </div>
+        <div sclass="header item">
+            <div sclass="header-left">
+                <vlayout>
+                    <label style="font-size: 100%;">Layout ZK components more lively:</label>
+                    <label value="ZK with CSS Grid"/>
+                </vlayout>
+            </div>
+            <div sclass="header-right">
+                <chosenbox hflex="1" creatable="true"/>
+            </div>
+        </div>
+        <div sclass="demo1 item">
+            <label value="Demo 1"/>
+            <separator/>
+            <image src="img/demo1.png" vflex="1"/>
+        </div>
+        <div sclass="demo2 item">
+            <label value="Demo 2"/>
+            <separator/>
+            <image src="img/demo2.png" vflex="1"/>
+        </div>
+        <div sclass="code item">
+            <label value="Code"/>
+            <separator/>
+            <image src="img/code1.png"/>
+            <label multiline="true">
+                The div component in line 2 is a CSS Grid Container, given the sclass container with some properties like display: grid, grid-template-columns and grid-template-rows to devide the container into some grid areas.
+
+                Line 3 and 10 are CSS Grid Items, with sclass we could specify the corresponding position by css grid properties like grid-column and grid-row. Then, in those div CSS Grid Items, we could add ZK components as it's children components.</label>
+        </div>
+        <div sclass="downloads item">
+            <label value="Downloads"/>
+            <separator/>
+            <label value="The whole demo project can be found on Github project."/>
+        </div>
+    </div>
+</zk>
+
+
+

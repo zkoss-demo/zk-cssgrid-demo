@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+CSSGridTest.zul
+
+	Purpose:
+
+	Description:
+
+	History:
+		Mon Jul  3 14:22:51 CST 2017, Created by wenninghsu
+
+Copycontainer2 (C) 2017 Potix Corporation. All container2s Reserved.
+
+-->
+
+<?style src="css/ZKCSSGridDemo2.css"?>
+<zk xmlns:n="http://www.zkoss.org/2005/zk/native">
+    <div sclass="container">
+        <div sclass="header item">
+            <label value="ZK with CSS Grid"/>
+        </div>
+        <div sclass="sidebar item">
+            <tree style="border: none;" hflex="1">
+                <treechildren>
+                    <treeitem>
+                        <treerow>
+                            <treecell>Products</treecell>
+                        </treerow>
+                        <treechildren>
+                            <treeitem>
+                                <treerow>
+                                    <treecell>
+                                        ZK
+                                    </treecell>
+                                </treerow>
+                                <treechildren>
+                                    <treeitem>
+                                        <treerow>
+                                            <treecell>
+                                                CE
+                                            </treecell>
+                                        </treerow>
+                                    </treeitem>
+                                    <treeitem>
+                                        <treerow>
+                                            <treecell>
+                                                PE
+                                            </treecell>
+                                        </treerow>
+                                    </treeitem>
+                                    <treeitem>
+                                        <treerow>
+                                            <treecell>
+                                                EE
+                                            </treecell>
+                                        </treerow>
+                                    </treeitem>
+                                </treechildren>
+                            </treeitem>
+                            <treeitem>
+                                <treerow>
+                                    <treecell>ZK Charts</treecell>
+                                </treerow>
+                            </treeitem>
+                            <treeitem>
+                                <treerow>
+                                    <treecell>ZK Calendar</treecell>
+                                </treerow>
+                            </treeitem>
+                            <treeitem>
+                                <treerow>
+                                    <treecell>ZK Pivottable</treecell>
+                                </treerow>
+                            </treeitem>
+                            <treeitem>
+                                <treerow>
+                                    <treecell>ZK SpreadSheet</treecell>
+                                </treerow>
+                            </treeitem>
+                        </treechildren>
+                    </treeitem>
+                </treechildren>
+            </tree>
+        </div>
+        <div sclass="main item" apply="ColumnParsedComposer">
+            <charts id="chart" type="column" title="ZK Charts"/>
+        </div>
+        <div sclass="footer item">
+            Contact Us
+            <separator/>
+            Copyright © 2005-2011 Potix Corporation. All rights reserved.
+        </div>
+    </div>
+</zk>
+
+
+
